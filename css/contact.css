@@ -1,11 +1,5 @@
-main{
-  height: 100vh;
-  background-color: #1E202B;
-}
-
 .navbar{
   background-color: #1E202B;
- 
 }
 .nav-item a {
   padding: 5px 25px !important;
@@ -33,7 +27,6 @@ main{
 .my-image{
   height: 200px !important;
 }
-
 
 /*!============================================================*/
 /*^ Footer Section  */
@@ -111,15 +104,6 @@ main{
   color: #888;
 }
 
-
-
-
-
-
-
-
-
-
 body {
   background-color: #1E202B;
   color: #ffffff;
@@ -127,6 +111,7 @@ body {
 
 .contact-form {
   padding: 2rem;
+
 }
 
 .form-control {
@@ -154,7 +139,12 @@ textarea.form-control {
 
 .contact-info {
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
+  padding: 2.1rem;
+  border-radius: 10px;
+}
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.05);
+
   border-radius: 10px;
 }
 
@@ -202,7 +192,6 @@ h1 {
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.8);
 }
-
 
 .py-5 {
   padding-top: 5rem;
