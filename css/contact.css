@@ -1,0 +1,214 @@
+main{
+  height: 100vh;
+  background-color: #1E202B;
+}
+
+.navbar{
+  background-color: #1E202B;
+ 
+}
+.nav-item a {
+  padding: 5px 25px !important;
+  margin: 0 5px !important;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: white !important;
+  transition: 0.3s ease;
+  font-weight: 400;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  border-color: #00aaff; 
+  color: #00aaff !important; 
+  background-color: transparent; 
+ 
+}
+.nav-item a.active {
+  border-color: #00aaff; 
+  color: #00aaff !important; 
+  background-color: transparent; 
+  
+}
+.my-image{
+  height: 200px !important;
+}
+
+
+/*!============================================================*/
+/*^ Footer Section  */
+.site-footer {
+  background-color: #262936;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.site-footer .subscribe-form .input-group {
+  display: flex;
+  border-radius: 25px;
+  background-color: #1E202B;
+  padding: 5px; 
+}
+
+.site-footer .subscribe-form .input-group input[type="text"] {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  color: #ddd;
+  background-color: transparent;
+}
+
+.site-footer .subscribe-form .input-group input[type="text"]::placeholder {
+  color: #888;
+}
+
+.site-footer .subscribe-form .input-group button {
+  border: none;
+  padding: 0 20px;
+  background-color: #00aaff;
+  color: white;
+  border-radius: 25px !important; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.site-footer .subscribe-form .input-group button:hover {
+  background-color: #0088cc;
+}
+
+.site-footer .social-links {
+  margin-top: 10px; 
+  margin-right: 10px;
+  text-align: right; 
+  padding-right: 15px; 
+}
+
+
+.site-footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #00aaff;
+  font-size: 1.2rem;
+  background-color: #1E202B;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  margin-right: 10px; 
+  transition: all 0.3s ease;
+}
+
+.site-footer .social-links a:hover {
+  background-color: #00aaff;
+  color: white;
+}
+
+.colophon {
+  margin-top: 20px;
+  padding-left:5px ;
+  color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #1E202B;
+  color: #ffffff;
+}
+
+.contact-form {
+  padding: 2rem;
+}
+
+.form-control {
+  background-color:transparent;
+  border: 1px solid gray;
+  border-radius: 25px;
+  color: #ffffff;
+  padding: 0.75rem;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #00b7ff;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+textarea.form-control {
+  min-height: 150px;
+}
+
+.contact-info {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-info .contact-item {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 1rem; 
+}
+
+.contact-info .icon {
+  color: #00b7ff;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.contact-info .contact-item div {
+  text-align: left; 
+}
+
+
+.btn-submit {
+  background-color: #00b7ff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  float: right;
+}
+
+.btn-submit:hover {
+  background-color: #0095d9;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+textarea{
+  border-radius: 30px !important;
+}

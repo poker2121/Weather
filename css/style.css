@@ -1,0 +1,199 @@
+body{
+  background-image: url("../images/nightl.jpg");
+  background-size: cover ;
+  background-position: center center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar{
+  background-color: #1E202B;
+ 
+}
+.nav-item a {
+  padding: 5px 25px !important;
+  margin: 0 5px !important;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: white !important;
+  transition: 0.3s ease;
+  font-weight: 400;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  border-color: #00aaff; 
+  color: #00aaff !important; 
+  background-color: transparent; 
+ 
+}
+.nav-item a.active {
+  border-color: #00aaff; 
+  color: #00aaff !important; 
+  background-color: transparent; 
+  
+}
+.my-image{
+  height: 200px !important;
+}
+
+.custom-card-header {
+  background-color: #2D303D !important; 
+}
+
+.custom-card-body {
+  background-color: #323544 !important; 
+
+}
+.bgfont{
+  font-size: 5rem ;
+}
+.icons-container i {
+  margin-right: 10px; 
+}
+.icons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+
+}
+
+.icon-with-text i {
+  color: #a2a4ac;
+}
+
+.icon-with-text span {
+  color: #ffffff;
+  font-size: 16px;
+}
+.hcard2{
+background-color: #222530 !important;
+}
+.card2{
+  background-color: #262936 !important;
+}
+
+/*!============================================================*/
+/*^ Home Section Search Part  */
+.custom-input-group {
+  display: flex;
+  justify-content: center; 
+  border-radius: 25px;
+  background-color: #1E202B;
+  padding: 5px; 
+  max-width: 50%; 
+  margin: 0 auto; 
+}
+
+.custom-input-group input[type="search"] {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  color: #ddd;
+  background-color: transparent;
+}
+
+.custom-input-group input[type="search"]::placeholder {
+  color: #888;
+}
+
+.custom-input-group button {
+  border: none;
+  padding: 0 20px;
+  background-color: #00aaff;
+  color: white;
+  border-radius: 25px !important; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-input-group button:hover {
+  background-color: #0088cc;
+}
+
+/*!============================================================*/
+/*^ Footer Section  */
+.site-footer {
+  background-color: #262936;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.site-footer .subscribe-form .input-group {
+  display: flex;
+  border-radius: 25px;
+  background-color: #1E202B;
+  padding: 5px; 
+}
+
+.site-footer .subscribe-form .input-group input[type="text"] {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  color: #ddd;
+  background-color: transparent;
+}
+
+.site-footer .subscribe-form .input-group input[type="text"]::placeholder {
+  color: #888;
+}
+
+.site-footer .subscribe-form .input-group button {
+  border: none;
+  padding: 0 20px;
+  background-color: #00aaff;
+  color: white;
+  border-radius: 25px !important; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.site-footer .subscribe-form .input-group button:hover {
+  background-color: #0088cc;
+}
+
+.site-footer .social-links {
+  margin-top: 10px; 
+  margin-right: 10px;
+  text-align: right; 
+  padding-right: 15px; 
+}
+
+
+.site-footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #00aaff;
+  font-size: 1.2rem;
+  background-color: #1E202B;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  margin-right: 10px; 
+  transition: all 0.3s ease;
+}
+
+.site-footer .social-links a:hover {
+  background-color: #00aaff;
+  color: white;
+}
+
+.colophon {
+  margin-top: 20px;
+  padding-left:5px ;
+  color: #888;
+}
+
+
+@media (max-width: 560px) {
+  .navbar-collapse {
+    padding-top: 10px; 
+  }
+}

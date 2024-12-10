@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/cloudy.png" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+     <div class="container d-flex justify-content-between pt-2 pb-2">
+     
+      <a class="navbar-brand text-white " href="#">
+        <img src="images/cloudy.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Weather
+      </a>
+      <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white "></span>
+      </button>
+  
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-item">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+          </li>
+        </ul>
+      </div>
+     </div>
+    </nav>
+
+  <main class="my-4 py-4">
+    <section class="container">
+      <div class="input-group custom-input-group mx-auto my-3 mt-5 mb-5">
+        <input type="search" id="searchInput" placeholder="Search for a city" />
+        <button type="submit" id="btnInput">Search</button>
+      </div>
+  
+      
+      <div class="container">
+        <div class="row g-0" id="rowData"> 
+ 
+        </div>
+      </div>
+  
+    </section>
+  </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <form action="#" class="subscribe-form">
+              <div class="input-group">
+                <input type="text" placeholder="Enter your email to subscribe...">
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>            
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="colophon">Copyright 2024. Designed by Banoub Nagy rights reserved</p>
+      </div>
+    </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
