@@ -1,6 +1,5 @@
 let searchInput = document.getElementById("searchInput");
 let rowData = document.getElementById("rowData");
-const apiKey = "7d77b96c972b4d119a3151101212704";
 
 getWeather("Damietta");
 
@@ -10,7 +9,7 @@ searchInput.addEventListener("input", function () {
 
 async function getWeather(city) {
   try {
-    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`);
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${city}&days=3`);
     const data = await response.json();
     displayWeather(data);
   } catch (error) {
