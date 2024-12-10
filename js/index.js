@@ -17,13 +17,11 @@ async function getWeather(city) {
   }
 }
 
-
 function displayWeather(data) {
   let cartoona = "";
   const forecast = data.forecast.forecastday;
   const location = data.location.name;
 
-  
   cartoona += `
     <div class="col-md-4">
       <div class="card h-100 border-0">
@@ -55,22 +53,36 @@ function displayWeather(data) {
     </div>
   `;
 
+  forecast.slice(1).forEach((day, index) => {
+    // تحديد الكروت باستخدام الفهرس
+    let cardClass = "";
+    let headerClass = "";
+    
+    // الكرت التاني
+    if (index === 0) {
+      headerClass = "hcard2";
+      cardClass = "card2";
+    }
+    // باقي الكروت
+    else {
+      headerClass = "custom-card-header";
+      cardClass = "";
+    }
 
-  for (let i = 1; i < forecast.length; i++) {
     cartoona += `
       <div class="col-md-4">
-        <div class="card h-100 border-0">
-          <div class="card-header text-white custom-card-header text-center hcard2 rounded-0">${formatDay(forecast[i].date)}</div>
-          <div class="card-body custom-card-body text-white text-center card2 align-content-center">
-            <div class="status-icon pb-3"><img src="${forecast[i].day.condition.icon}" width="40" height="40" alt=""></div>
-            <h5 class="card-title pt-3">${forecast[i].day.avgtemp_c}°C</h5>
-            <span class="text-white-50">${forecast[i].day.mintemp_c}°C</span>
-            <div class="custom text-info pb-3 py-4">${forecast[i].day.condition.text}</div>
+        <div class="card h-100 border-0 ${cardClass}">
+          <div class="card-header text-white ${headerClass} text-center rounded-0">${formatDay(day.date)}</div>
+          <div class="card-body custom-card-body text-white text-center ${cardClass} align-content-center">
+            <div class="status-icon pb-3"><img src="${day.day.condition.icon}" width="40" height="40" alt=""></div>
+            <h5 class="card-title pt-3">${day.day.avgtemp_c}°C</h5>
+            <span class="text-white-50">${day.day.mintemp_c}°C</span>
+            <div class="custom text-info pb-3 py-4">${day.day.condition.text}</div>
           </div>
         </div>
       </div>
     `;
-  }
+  });
 
   rowData.innerHTML = cartoona;
 }
